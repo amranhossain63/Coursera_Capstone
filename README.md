@@ -1,4 +1,4 @@
-# Coursera_Capstone
+# Coursera_Capstone :  Car Accident Severity(Seattle)
 Applied Data Science mainly used for the capstone project
 
 ## Introduction:
