@@ -40,3 +40,8 @@ HITPARKEDCAR: Whether or not the collision involved hitting a parked car
 
 
 Furthermore, because of the existence of null values in some records, the data needs to be preprocessed before any further processing.
+
+
+
+## Data Preparation:
+The original data are not ready for our desired model. We have to prepare the data set to build a perfect model. We have to drop some non-relevant columns, which will not be useful to model. We will drop some null values as missing data  info. We update some missing/null value with the expected value. We replace the value with meaningful value. We will update date time as week of day. Time as a busy rush .
