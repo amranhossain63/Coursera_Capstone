@@ -56,3 +56,10 @@ Once I have load data into Pandas Dataframe, used ‘dtypes’ attribute to chec
 “LIGHTCOND”
 As  mentioned earlier, “SEVERITYCODE” is the target variable.
 I have run a value count on road (‘ROADCOND’) and weather condition (‘WEATHER’) to get ideas of the different road and weather conditions. I also have run a value count on light conditions (’LIGHTCOND’), to see the breakdowns of accidents occurring during the different light conditions.
+
+
+
+### References:
+
+1. GLOBAL STATUS REPORT ON ROAD SAFETY 2018.  World Health Organization. https://www.who.int/publications/i/item/global-status-report-on-road-safety-2018
+2. NHTSA’s Quick Facts 2016 https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/812451
