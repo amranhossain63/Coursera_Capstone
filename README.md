@@ -61,5 +61,6 @@ I have run a value count on road (‘ROADCOND’) and weather condition (‘WEAT
 
 ### References:
 
-1. GLOBAL STATUS REPORT ON ROAD SAFETY 2018.  World Health Organization. https://www.who.int/publications/i/item/global-status-report-on-road-safety-2018
+1. GLOBAL STATUS REPORT ON ROAD SAFETY 2018.  World Health Organization.
+https://www.who.int/publications/i/item/global-status-report-on-road-safety-2018
 2. NHTSA’s Quick Facts 2016 https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/812451
