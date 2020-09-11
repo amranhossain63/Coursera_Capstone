@@ -22,21 +22,21 @@ The code that corresponds to the severity of the collision:
 
 
 Other important variables include:
-ADDRTYPE: Collision address type: Alley, Block, Intersection
-LOCATION: Description of the general location of the collision
-PERSONCOUNT: The total number of people involved in the collision helps identify severity involved
-PEDCOUNT: The number of pedestrians involved in the collision helps identify severity involved
- PEDCYLCOUNT: The number of bicycles involved in the collision helps identify severity involved
-VEHCOUNT: The number of vehicles involved in the collision identify severity involved
-INCDTTM : The date and time of the incident.
-JUNCTIONTYPE: Category of junction at which collision took place helps identify where most collisions occur
-WEATHER: A description of the weather conditions during the time of the collision
-ROADCOND: The condition of the road during the collision
-LIGHTCOND: The light conditions during the collision
-SPEEDING: Whether or not speeding was a factor in the collision (Y/N)
-SEGLANEKEY: A key for the lane segment in which the collision occurred
-CROSSWALKKEY: A key for the crosswalk at which the collision occurred
-HITPARKEDCAR: Whether or not the collision involved hitting a parked car
+- ADDRTYPE: Collision address type: Alley, Block, Intersection
+- LOCATION: Description of the general location of the collision
+- PERSONCOUNT: The total number of people involved in the collision helps identify severity involved
+- PEDCOUNT: The number of pedestrians involved in the collision helps identify severity involved
+- PEDCYLCOUNT: The number of bicycles involved in the collision helps identify severity involved
+- VEHCOUNT: The number of vehicles involved in the collision identify severity involved
+- INCDTTM : The date and time of the incident.
+- JUNCTIONTYPE: Category of junction at which collision took place helps identify where most collisions occur
+- WEATHER: A description of the weather conditions during the time of the collision
+- ROADCOND: The condition of the road during the collision
+- LIGHTCOND: The light conditions during the collision
+- SPEEDING: Whether or not speeding was a factor in the collision (Y/N)
+- SEGLANEKEY: A key for the lane segment in which the collision occurred
+- CROSSWALKKEY: A key for the crosswalk at which the collision occurred
+- HITPARKEDCAR: Whether or not the collision involved hitting a parked car
 
 
 Furthermore, because of the existence of null values in some records, the data needs to be preprocessed before any further processing.
