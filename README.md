@@ -14,11 +14,11 @@ The target audience of the project is local Seattle government, police, rescue g
 ## Data Understanding:
 The dataset we select has 194,673 rows and 37 different independent variables.We will use SEVERITY CODE as your dependent variable Y, with different independent variables X to identify the cause of road accidents and level of severity.The dataset are quite large, we need to filter out the missing value and delete the unrelated columns. Then we select the independent variables such as address type, weather, road condition, and light condition to compare with Y which may have more impact on the accidents.The dependent variable, “SEVERITYCODE”, contains numbers that correspond to different levels of severity caused by an accident .
 The code that corresponds to the severity of the collision:
-• 3—fatality
-• 2b—serious injury
-• 2—injury
-• 1—prop damage
-• 0—unknown
+- 3—fatality
+- 2b—serious injury
+- 2—injury
+- 1—prop damage
+- 0—unknown
 
 
 Other important variables include:
