@@ -14,29 +14,29 @@ The target audience of the project is local Seattle government, police, rescue g
 ## Data Understanding:
 The dataset we select has 194,673 rows and 37 different independent variables.We will use SEVERITY CODE as your dependent variable Y, with different independent variables X to identify the cause of road accidents and level of severity.The dataset are quite large, we need to filter out the missing value and delete the unrelated columns. Then we select the independent variables such as address type, weather, road condition, and light condition to compare with Y which may have more impact on the accidents.The dependent variable, “SEVERITYCODE”, contains numbers that correspond to different levels of severity caused by an accident .
 The code that corresponds to the severity of the collision:
-• 3—fatality
-• 2b—serious injury
-• 2—injury
-• 1—prop damage
-• 0—unknown
+- 3—fatality
+- 2b—serious injury
+- 2—injury
+- 1—prop damage
+- 0—unknown
 
 
 Other important variables include:
-ADDRTYPE: Collision address type: Alley, Block, Intersection
-LOCATION: Description of the general location of the collision
-PERSONCOUNT: The total number of people involved in the collision helps identify severity involved
-PEDCOUNT: The number of pedestrians involved in the collision helps identify severity involved
- PEDCYLCOUNT: The number of bicycles involved in the collision helps identify severity involved
-VEHCOUNT: The number of vehicles involved in the collision identify severity involved
-INCDTTM : The date and time of the incident.
-JUNCTIONTYPE: Category of junction at which collision took place helps identify where most collisions occur
-WEATHER: A description of the weather conditions during the time of the collision
-ROADCOND: The condition of the road during the collision
-LIGHTCOND: The light conditions during the collision
-SPEEDING: Whether or not speeding was a factor in the collision (Y/N)
-SEGLANEKEY: A key for the lane segment in which the collision occurred
-CROSSWALKKEY: A key for the crosswalk at which the collision occurred
-HITPARKEDCAR: Whether or not the collision involved hitting a parked car
+- ADDRTYPE: Collision address type: Alley, Block, Intersection
+- LOCATION: Description of the general location of the collision
+- PERSONCOUNT: The total number of people involved in the collision helps identify severity involved
+- PEDCOUNT: The number of pedestrians involved in the collision helps identify severity involved
+- PEDCYLCOUNT: The number of bicycles involved in the collision helps identify severity involved
+- VEHCOUNT: The number of vehicles involved in the collision identify severity involved
+- INCDTTM : The date and time of the incident.
+- JUNCTIONTYPE: Category of junction at which collision took place helps identify where most collisions occur
+- WEATHER: A description of the weather conditions during the time of the collision
+- ROADCOND: The condition of the road during the collision
+- LIGHTCOND: The light conditions during the collision
+- SPEEDING: Whether or not speeding was a factor in the collision (Y/N)
+- SEGLANEKEY: A key for the lane segment in which the collision occurred
+- CROSSWALKKEY: A key for the crosswalk at which the collision occurred
+- HITPARKEDCAR: Whether or not the collision involved hitting a parked car
 
 
 Furthermore, because of the existence of null values in some records, the data needs to be preprocessed before any further processing.
@@ -44,8 +44,10 @@ Furthermore, because of the existence of null values in some records, the data n
 
 
 ## Data Preparation:
-The original data are not ready for our desired model. We have to prepare the data set to build a perfect model. We have to drop some non-relevant columns, which will not be useful to model. We will drop some null values as missing data  info. We update some missing/null value with the expected value. We replace the value with meaningful value. We will update date time as week of day. Time as a busy rush .
 
+The original data are not ready for our desired model. We have to prepare the data set to build a perfect model. We have to drop some non-relevant columns, which will not be useful to model. We will drop some null values as missing data  info. We update some missing/null value with the expected value. We replace the value with meaningful value. We will update date time as week of day. Time as a busy rush . Here we check the number of people affected by car accidents per year. We can told number of accident are decreasing but we can’t conclude it.
+
+![YEAR VS PERSONCOUNT](year.png)
 
 ## Modeling:    
 
