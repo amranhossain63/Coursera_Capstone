@@ -51,7 +51,7 @@ The original data are not ready for our desired model. We have to prepare the da
 
 We also check the month to find out which have more incidents. January and October have more number of incidents compared to other months.
 
-![MONTH VS PERSONCOUNT](month.png)
+![MONTH VS PERSONCOUNT](Img/month.png)
 
 We also check the day of week. As we can see on graph drive on Friday there is more risk. Drivers should be more careful on this day. Here days are
 
@@ -63,17 +63,17 @@ We also check the day of week. As we can see on graph drive on Friday there is m
 - 5  #Saturday
 - 6  #Sunday
 
-![DAY VS PERSONCOUNT](day.png)
+![DAY VS PERSONCOUNT](Img/day.png)
 
 In addition, most of the features are of object data types that need to be converted into numerical data types.
 After analyzing the data set, I have decided to focus on only eight features, severity, weather conditions, road conditions, light conditions, Address Type, collision Type, the number of pedestrians and bicycles involved in the collision. among others.
 To get a good understanding of the dataset, I have checked different values in the features. The results show the target feature is imbalance, so we use a simple statistical technique to balance it.
 
-![severitycode](severitycode.png)
+![severitycode](Img/severitycode.png)
 
 As We can see, the number of rows in class 1 is almost three times bigger than the number of rows in class 2. It is possible to solve the issue by downsampling the class 1.
 
-![severitycode](severitycode1.png)
+![severitycode](Img/severitycode1.png)
 
 ## Modeling:    
 
@@ -92,11 +92,11 @@ Once I have load data into Pandas Dataframe, used ‘dtypes’ attribute to chec
 As  mentioned earlier, “SEVERITYCODE” is the target variable.
 I have run a value count on road (‘ROADCOND’) and weather condition (‘WEATHER’) to get ideas of the different road and weather conditions. I also have run a value count on light conditions (’LIGHTCOND’), to see the breakdowns of accidents occurring during the different light conditions.
 
-![weather](weather.png)
+![weather](Img/weather.png)
 
 Also run value counts on the features 'ADDRTYPE', 'COLLISIONTYPE',  'JUNCTIONTYPE', 'PEDCOUNT', 'PEDCYLCOUNT' for check the breakdown of those feature
 
-![breakdown](beakdown.png)
+![breakdown](Img/beakdown.png)
 
 After balancing SEVERITYCODE feature, and standardizing the input feature, the data has been ready for building machine learning models.
 WE have employed four machine learning models:
@@ -108,34 +108,34 @@ WE have employed four machine learning models:
 
 We define our 70% of data as  train  and 30% as test data set :
 
-![train-test](train-test.png)
+![train-test](Img/train-test.png)
 
 ### K-Nearest Neighbor (KNN)
 
 KNN will help us predict the severity code of an outcome by finding the most similar to the data point within k distance.
-![Knn](knn1.png)
+![Knn](Img/knn1.png)
 
 The Best accuracy of KNN model with K = 9
 
-![knnwith9](knn1with9.png)
+![knnwith9](Img/knn1with9.png)
 
 ### KNN Model Evaluation
 
 Knn Jaccard and F1 score are below:
 
-![knnmodel_eval](knnmodel.png)
+![knnmodel_eval](Img/knnmodel.png)
 
 ### Decision Tree
 
 A decision tree model gives us a layout of all possible outcomes so we can fully analyze the consequences of a decision. It context, the decision tree observes all possible outcomes of different weather conditions.
 
-![decision_tree](dt1.png)
+![decision_tree](Img/dt1.png)
 
 ### Decision tree evaluation
 
 Decision tree jaccard and f1 score are :
 
-![decision_tree_model](dtmodel.png)
+![decision_tree_model](Img/dtmodel.png)
 
 
 ### References:
