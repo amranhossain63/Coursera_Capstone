@@ -137,6 +137,19 @@ Decision tree jaccard and f1 score are :
 
 ![decision_tree_model](Img/dtmodel.png)
 
+### Support Vector Machine (SVM)
+SVM will provide us with the Hyperline of our dataset.
+
+![SVM](Img/svm1.png)
+
+![SVM](Img/svm2.png)
+
+### SVM evaluation
+
+SVM jaccard and f1 score are:
+
+![model](Img/svmmodel.png)
+
 
 ### References:
 
