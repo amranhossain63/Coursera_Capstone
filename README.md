@@ -101,14 +101,30 @@ Also run value counts on the features 'ADDRTYPE', 'COLLISIONTYPE',  'JUNCTIONTYP
 After balancing SEVERITYCODE feature, and standardizing the input feature, the data has been ready for building machine learning models.
 WE have employed four machine learning models:
 
-1. K Nearest Neighbour (KNN)
-2. Decision Tree
-3. Linear Regression
-4. Support Vector Machine (SVM)
+1. **K Nearest Neighbour (KNN)**
+2. **Decision Tree**
+3. **Linear Regression**
+4. **Support Vector Machine (SVM)**
 
 We define our 70% of data as  train  and 30% as test data set :
 
 ![train-test](train-test.png)
+
+### K-Nearest Neighbor (KNN)
+
+KNN will help us predict the severity code of an outcome by finding the most similar to the data point within k distance.
+![Knn](knn1.png)
+
+The Best accuracy of KNN model with K = 9
+
+![knnwith9](knn1with9.png)
+
+### KNN Model Evaluation
+
+Knn Jaccard and F1 score are below:
+
+![knnmodel_eval](knnmodel.png)
+
 
 ### References:
 
