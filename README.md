@@ -94,6 +94,21 @@ I have run a value count on road (‘ROADCOND’) and weather condition (‘WEAT
 
 ![weather](weather.png)
 
+Also run value counts on the features 'ADDRTYPE', 'COLLISIONTYPE',  'JUNCTIONTYPE', 'PEDCOUNT', 'PEDCYLCOUNT' for check the breakdown of those feature
+
+![breakdown](beakdown.png)
+
+After balancing SEVERITYCODE feature, and standardizing the input feature, the data has been ready for building machine learning models.
+WE have employed four machine learning models:
+
+1. K Nearest Neighbour (KNN)
+2. Decision Tree
+3. Linear Regression
+4. Support Vector Machine (SVM)
+
+We define our 70% of data as  train  and 30% as test data set :
+
+![train-test](train-test.png)
 
 ### References:
 
