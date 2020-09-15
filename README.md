@@ -137,6 +137,29 @@ Decision tree jaccard and f1 score are :
 
 ![decision_tree_model](Img/dtmodel.png)
 
+### Support Vector Machine (SVM)
+SVM will provide us with the Hyperline of our dataset.
+
+![SVM](Img/svm1.png)
+
+![SVM](Img/svm2.png)
+
+### SVM evaluation
+
+SVM jaccard and f1 score are:
+
+![model](Img/svmmodel.png)
+
+### Logistic Regression
+
+Because our dataset only provides us with two severity code outcomes, our model will only predict one of those two classes. This makes our data binary, which is perfect to use with logistic regression.
+
+![SVM](Img/LR1.png)
+
+### Logistic regression evaluation
+Logistic regression jaccard , f1, and log loss score:
+
+![SVM](Img/lrmodelk.png)
 
 ### References:
 
