@@ -161,7 +161,13 @@ Logistic regression jaccard , f1, and log loss score:
 
 ![SVM](Img/lrmodelk.png)
 
-### References:
+
+## Result
+The accuracy of the built model using different evaluation metrics:
+![results](Img/report.png)
+
+
+
 
 1. GLOBAL STATUS REPORT ON ROAD SAFETY 2018.  World Health Organization.
 https://www.who.int/publications/i/item/global-status-report-on-road-safety-2018
