@@ -49,6 +49,23 @@ The original data are not ready for our desired model. We have to prepare the da
 
 ![YEAR VS PERSONCOUNT](year.png)
 
+We also check the month to find out which have more incidents. January and October have more number of incidents compared to other months.
+
+![MONTH VS PERSONCOUNT](month.png)
+
+We also check the day of week. As we can see on graph drive on Friday there is more risk. Drivers should be more careful on this day. Here days are
+
+- 0  #Monday
+- 1  #Tuesday
+- 2  #Wednesday
+- 3  #Thursday
+- 4  #Friday
+- 5  #Saturday
+- 6  #Sunday
+
+![DAY VS PERSONCOUNT](day.png)
+
+
 ## Modeling:    
 
 I have used watson studio, Github as a repository and running Jupyter Notebook to preprocess data and build Machine Learning models. Regarding coding, I have used Python and some popular packages such as Pandas, NumPy and Sklearn.
