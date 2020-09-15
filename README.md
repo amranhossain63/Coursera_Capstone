@@ -47,7 +47,7 @@ Furthermore, because of the existence of null values in some records, the data n
 
 The original data are not ready for our desired model. We have to prepare the data set to build a perfect model. We have to drop some non-relevant columns, which will not be useful to model. We will drop some null values as missing data  info. We update some missing/null value with the expected value. We replace the value with meaningful value. We will update date time as week of day. Time as a busy rush . Here we check the number of people affected by car accidents per year. We can told number of accident are decreasing but we can’t conclude it.
 
-![YEAR VS PERSONCOUNT](year.png)
+![YEAR VS PERSONCOUNT](Img/year.png)
 
 We also check the month to find out which have more incidents. January and October have more number of incidents compared to other months.
 
