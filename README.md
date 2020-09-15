@@ -79,12 +79,18 @@ As We can see, the number of rows in class 1 is almost three times bigger than t
 
 I have used watson studio, Github as a repository and running Jupyter Notebook to preprocess data and build Machine Learning models. Regarding coding, I have used Python and some popular packages such as Pandas, NumPy and Sklearn.
 Once I have load data into Pandas Dataframe, used ‘dtypes’ attribute to check the feature names and their data types. Then I have selected the most important features to predict the severity of accidents in Seattle. Among all the features, the following features have the most influence in the accuracy of the predictions:
-“WEATHER”,
-“ROADCOND”,
-“LIGHTCOND”
+ ‘WEATHER’,
+ ‘ROADCOND’,
+ ‘LIGHTCOND’,
+ 'ADDRTYPE',
+ 'COLLISIONTYPE',
+ 'JUNCTIONTYPE',
+ 'PEDCOUNT',
+ 'PEDCYLCOUNT'
 As  mentioned earlier, “SEVERITYCODE” is the target variable.
 I have run a value count on road (‘ROADCOND’) and weather condition (‘WEATHER’) to get ideas of the different road and weather conditions. I also have run a value count on light conditions (’LIGHTCOND’), to see the breakdowns of accidents occurring during the different light conditions.
 
+![weather](weather.png)
 
 
 ### References:
