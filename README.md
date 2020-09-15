@@ -44,19 +44,98 @@ Furthermore, because of the existence of null values in some records, the data n
 
 
 ## Data Preparation:
-The original data are not ready for our desired model. We have to prepare the data set to build a perfect model. We have to drop some non-relevant columns, which will not be useful to model. We will drop some null values as missing data  info. We update some missing/null value with the expected value. We replace the value with meaningful value. We will update date time as week of day. Time as a busy rush .
 
+The original data are not ready for our desired model. We have to prepare the data set to build a perfect model. We have to drop some non-relevant columns, which will not be useful to model. We will drop some null values as missing data  info. We update some missing/null value with the expected value. We replace the value with meaningful value. We will update date time as week of day. Time as a busy rush . Here we check the number of people affected by car accidents per year. We can told number of accident are decreasing but we can’t conclude it.
+
+![YEAR VS PERSONCOUNT](Img/year.png)
+
+We also check the month to find out which have more incidents. January and October have more number of incidents compared to other months.
+
+![MONTH VS PERSONCOUNT](Img/month.png)
+
+We also check the day of week. As we can see on graph drive on Friday there is more risk. Drivers should be more careful on this day. Here days are
+
+- 0  #Monday
+- 1  #Tuesday
+- 2  #Wednesday
+- 3  #Thursday
+- 4  #Friday
+- 5  #Saturday
+- 6  #Sunday
+
+![DAY VS PERSONCOUNT](Img/day.png)
+
+In addition, most of the features are of object data types that need to be converted into numerical data types.
+After analyzing the data set, I have decided to focus on only eight features, severity, weather conditions, road conditions, light conditions, Address Type, collision Type, the number of pedestrians and bicycles involved in the collision. among others.
+To get a good understanding of the dataset, I have checked different values in the features. The results show the target feature is imbalance, so we use a simple statistical technique to balance it.
+
+![severitycode](Img/severitycode.png)
+
+As We can see, the number of rows in class 1 is almost three times bigger than the number of rows in class 2. It is possible to solve the issue by downsampling the class 1.
+
+![severitycode](Img/severitycode1.png)
 
 ## Modeling:    
 
 I have used watson studio, Github as a repository and running Jupyter Notebook to preprocess data and build Machine Learning models. Regarding coding, I have used Python and some popular packages such as Pandas, NumPy and Sklearn.
 Once I have load data into Pandas Dataframe, used ‘dtypes’ attribute to check the feature names and their data types. Then I have selected the most important features to predict the severity of accidents in Seattle. Among all the features, the following features have the most influence in the accuracy of the predictions:
-“WEATHER”,
-“ROADCOND”,
-“LIGHTCOND”
+
+- ‘WEATHER’,
+- ‘ROADCOND’,
+- ‘LIGHTCOND’,
+- 'ADDRTYPE',
+- 'COLLISIONTYPE',
+- 'JUNCTIONTYPE',
+- 'PEDCOUNT',
+- 'PEDCYLCOUNT'
+
 As  mentioned earlier, “SEVERITYCODE” is the target variable.
 I have run a value count on road (‘ROADCOND’) and weather condition (‘WEATHER’) to get ideas of the different road and weather conditions. I also have run a value count on light conditions (’LIGHTCOND’), to see the breakdowns of accidents occurring during the different light conditions.
 
+![weather](Img/weather.png)
+
+Also run value counts on the features 'ADDRTYPE', 'COLLISIONTYPE',  'JUNCTIONTYPE', 'PEDCOUNT', 'PEDCYLCOUNT' for check the breakdown of those feature
+
+![breakdown](Img/beakdown.png)
+
+After balancing SEVERITYCODE feature, and standardizing the input feature, the data has been ready for building machine learning models.
+WE have employed four machine learning models:
+
+1. **K Nearest Neighbour (KNN)**
+2. **Decision Tree**
+3. **Linear Regression**
+4. **Support Vector Machine (SVM)**
+
+We define our 70% of data as  train  and 30% as test data set :
+
+![train-test](Img/train-test.png)
+
+### K-Nearest Neighbor (KNN)
+
+KNN will help us predict the severity code of an outcome by finding the most similar to the data point within k distance.
+![Knn](Img/knn1.png)
+
+The Best accuracy of KNN model with K = 9
+
+![knnwith9](Img/knn1with9.png)
+
+### KNN Model Evaluation
+
+Knn Jaccard and F1 score are below:
+
+![knnmodel_eval](Img/knnmodel.png)
+
+### Decision Tree
+
+A decision tree model gives us a layout of all possible outcomes so we can fully analyze the consequences of a decision. It context, the decision tree observes all possible outcomes of different weather conditions.
+
+![decision_tree](Img/dt1.png)
+
+### Decision tree evaluation
+
+Decision tree jaccard and f1 score are :
+
+![decision_tree_model](Img/dtmodel.png)
 
 
 ### References:
