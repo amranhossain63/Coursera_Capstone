@@ -65,6 +65,15 @@ We also check the day of week. As we can see on graph drive on Friday there is m
 
 ![DAY VS PERSONCOUNT](day.png)
 
+In addition, most of the features are of object data types that need to be converted into numerical data types.
+After analyzing the data set, I have decided to focus on only eight features, severity, weather conditions, road conditions, light conditions, Address Type, collision Type, the number of pedestrians and bicycles involved in the collision. among others.
+To get a good understanding of the dataset, I have checked different values in the features. The results show the target feature is imbalance, so we use a simple statistical technique to balance it.
+
+![severitycode](severitycode.png)
+
+As We can see, the number of rows in class 1 is almost three times bigger than the number of rows in class 2. It is possible to solve the issue by downsampling the class 1.
+
+![severitycode](severitycode1.png)
 
 ## Modeling:    
 
