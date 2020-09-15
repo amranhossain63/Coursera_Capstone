@@ -125,6 +125,18 @@ Knn Jaccard and F1 score are below:
 
 ![knnmodel_eval](knnmodel.png)
 
+### Decision Tree
+
+A decision tree model gives us a layout of all possible outcomes so we can fully analyze the consequences of a decision. It context, the decision tree observes all possible outcomes of different weather conditions.
+
+![decision_tree](dt1.png)
+
+### Decision tree evaluation
+
+Decision tree jaccard and f1 score are :
+
+![decision_tree_model](dtmodel.png)
+
 
 ### References:
 
