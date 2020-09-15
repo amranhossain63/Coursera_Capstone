@@ -150,6 +150,16 @@ SVM jaccard and f1 score are:
 
 ![model](Img/svmmodel.png)
 
+### Logistic Regression
+
+Because our dataset only provides us with two severity code outcomes, our model will only predict one of those two classes. This makes our data binary, which is perfect to use with logistic regression.
+
+![SVM](Img/LR1.png)
+
+### Logistic regression evaluation
+Logistic regression jaccard , f1, and log loss score:
+
+![SVM](Img/lrmodelk.png)
 
 ### References:
 
