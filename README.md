@@ -161,8 +161,11 @@ Logistic regression jaccard , f1, and log loss score:
 
 ![SVM](Img/lrmodelk.png)
 
+
 ## Result
-The accuracy of the built model using different evaluation metrics:
+
+The algorithms implemented above did not give an accuracy score equal to or greater than 0.7, they all ranged from 0.6 to 0.7. Meaning, these models can predict the severity code of an accident with an accuracy equaling 60–70%. A data frame is created below with the bars representing the accuracy of each model.
+
 ![results](Img/report.png)
 
 
