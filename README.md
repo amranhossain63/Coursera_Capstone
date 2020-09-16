@@ -168,7 +168,6 @@ Based on the dataset provided for this capstone from weather, road, light condit
 
 
 
-
 ### References:
 
 1. GLOBAL STATUS REPORT ON ROAD SAFETY 2018.  World Health Organization. https://www.who.int/publications/i/item/global-status-report-on-road-safety-2018
