@@ -161,6 +161,14 @@ Logistic regression jaccard , f1, and log loss score:
 
 ![SVM](Img/lrmodelk.png)
 
+
+## Conclusion
+
+Based on the dataset provided for this capstone from weather, road, light conditions, type of address, collision junction and pedestrians or bicycles can be  pointing to certain classes, we can conclude that particular conditions have a somewhat impact on whether or not travel could result in property damage (class 1) or injury (class 2).
+
+
+
+
 ### References:
 
 1. GLOBAL STATUS REPORT ON ROAD SAFETY 2018.  World Health Organization. https://www.who.int/publications/i/item/global-status-report-on-road-safety-2018
