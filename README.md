@@ -171,7 +171,10 @@ The algorithms implemented above did not give an accuracy score equal to or grea
 
 ## Conclusion
 
-Based on the data-set provided for this capstone from weather, road, light conditions, type of address, collision junction and pedestrians or bicycles can be  pointing to certain classes, we can conclude that particular conditions have a somewhat impact on whether or not travel could result in property damage (class 1) or injury (class 2). We can also find out Friday have more collision than others day. So driving on Friday should be more carefully.
+Based on the data-set provided for this capstone from weather, road, light conditions, type of address, collision junction and pedestrians or bicycles can be  pointing to certain classes, we can conclude that particular conditions have a somewhat impact on whether or not travel could result in property damage (class 1) or injury (class 2).
+The accuracy of the classifiers is not good, highest being 69%. This usually means that the model is under fitted i.e. It needs to be trained on more data. Though the data-set has a lot of variety in terms of scenarios, more volume of the data for such scenarios has to be collected.
+Certain features with missing values were removed, this reduced the conditionality of the data-set, these features could have been correlated to other important features but they had to be removed. A better effort has to be made to collect data to reduce the number of missing values.
+
 
 
 
