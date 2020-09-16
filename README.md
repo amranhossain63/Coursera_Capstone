@@ -161,11 +161,16 @@ Logistic regression jaccard , f1, and log loss score:
 
 ![SVM](Img/lrmodelk.png)
 
-
-
 ## Result
 The accuracy of the built model using different evaluation metrics:
 ![results](Img/report.png)
+
+
+## Conclusion
+
+Based on the data-set provided for this capstone from weather, road, light conditions, type of address, collision junction and pedestrians or bicycles can be  pointing to certain classes, we can conclude that particular conditions have a somewhat impact on whether or not travel could result in property damage (class 1) or injury (class 2). We can also find out Friday have more collision than others day. So driving on Friday should be more carefully.
+
+
 
 ### References:
 
