@@ -167,7 +167,6 @@ Logistic regression jaccard , f1, and log loss score:
 The accuracy of the built model using different evaluation metrics:
 ![results](Img/report.png)
 
-
 ### References:
 
 1. GLOBAL STATUS REPORT ON ROAD SAFETY 2018.  World Health Organization.
